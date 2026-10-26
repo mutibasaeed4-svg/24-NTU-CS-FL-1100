@@ -112,3 +112,39 @@ After uploading the program:
 
 This project demonstrates how to generate PWM signals using an ESP32 to control two LEDs independently. It explains PWM frequency, resolution, duty cycle, and the use of software logic to create a continuous fading effect.
 
+
+# task 2
+# ESP32 Dual LED PWM Control with OLED
+
+## Overview
+This project uses ESP32 to control two LEDs with PWM. Both LEDs fade in and out at different frequencies, while an OLED displays their brightness percentages and frequencies.
+
+## Components
+- ESP32
+- 2 LEDs and resistors
+- SSD1306 OLED display
+
+## Pin Connections
+- LED 1: GPIO 18
+- LED 2: GPIO 19
+- OLED SDA: GPIO 21
+- OLED SCL: GPIO 22
+
+## PWM Settings
+- LED 1: 1 kHz
+- LED 2: 5 kHz
+- Resolution: 8-bit
+
+## Libraries
+- Adafruit GFX
+- Adafruit SSD1306
+
+## Working
+The ESP32 gradually changes each LED's brightness using PWM. The OLED continuously displays the brightness percentage and frequency of both LEDs.
+
+## Expected Output
+Both LEDs fade in and out, and the OLED shows their current brightness and PWM frequency.
+
+## Conclusion
+This project demonstrates PWM control and real-time OLED monitoring using ESP32.
+
